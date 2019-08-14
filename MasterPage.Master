@@ -7,13 +7,25 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+            <img alt="Logo" class="logo" src="/Images/logo.png" />
         </div>
-    </form>
+<%--          <asp:TreeView ID="TreeView1" runat="server" DataSourceID="Web.sitemap">
+        </asp:TreeView> --%>
+        <nav>
+            <asp:Menu runat="server" DataSourceID="SiteMapDataSource2" OnMenuItemClick="Unnamed1_MenuItemClick" Orientation="Horizontal" RenderingMode="List">
+                <StaticItemTemplate>
+<%# Eval("Text") %>
+                </StaticItemTemplate>
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" ShowStartingNode="False" />
+        </nav>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>    
 </body>
 </html>

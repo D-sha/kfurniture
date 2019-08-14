@@ -13,5 +13,10 @@ namespace KFurniture
         {
 
         }
+
+        protected void Unnamed1_MenuItemClick(object sender, MenuEventArgs e)
+        {
+
+        }
     }
 }

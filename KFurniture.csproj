@@ -69,11 +69,13 @@
   <ItemGroup>
     <Content Include="About\AboutUs.aspx" />
     <Content Include="About\ContactUs.aspx" />
-    <Content Include="default.aspx" />
-    <Content Include="Pages\Bedrooms.aspx" />
+    <Content Include="Images\logo.png" />
     <Content Include="Pages\OurRange.aspx" />
+    <Content Include="Pages\Bedrooms.aspx" />
     <Content Include="Pages\Sofas.aspx" />
+    <Content Include="Styles.css" />
     <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About\AboutUs.aspx.cs">
@@ -90,12 +92,12 @@
     <Compile Include="About\ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="Pages\OurRange.aspx.cs">
+      <DependentUpon>OurRange.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="Pages\OurRange.aspx.designer.cs">
+      <DependentUpon>OurRange.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Bedrooms.aspx.cs">
       <DependentUpon>Bedrooms.aspx</DependentUpon>
@@ -103,13 +105,6 @@
     </Compile>
     <Compile Include="Pages\Bedrooms.aspx.designer.cs">
       <DependentUpon>Bedrooms.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\OurRange.aspx.cs">
-      <DependentUpon>OurRange.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\OurRange.aspx.designer.cs">
-      <DependentUpon>OurRange.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Sofas.aspx.cs">
       <DependentUpon>Sofas.aspx</DependentUpon>
@@ -126,6 +121,13 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -140,7 +142,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Themes\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
