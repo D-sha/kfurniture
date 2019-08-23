@@ -69,13 +69,22 @@
   <ItemGroup>
     <Content Include="About\AboutUs.aspx" />
     <Content Include="About\ContactUs.aspx" />
+    <Content Include="About\Contact.ascx" />
+    <Content Include="App_Themes\Default\default.css" />
+    <Content Include="Images\Bapartment-2558277_1280.jpg" />
+    <Content Include="Images\Bbedroom-3185433_1280.jpg" />
+    <Content Include="Images\Bcreate-3532937_1280.jpg" />
+    <Content Include="Images\SLiving_room_Germany_2006.jpg" />
+    <Content Include="Images\Bbedroom-1940169_1920.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\Sofa3800ppx.jpg" />
     <Content Include="Pages\OurRange.aspx" />
     <Content Include="Pages\Bedrooms.aspx" />
     <Content Include="Pages\Sofas.aspx" />
-    <Content Include="Styles.css" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Register.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About\AboutUs.aspx.cs">
@@ -91,6 +100,13 @@
     </Compile>
     <Compile Include="About\ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\Contact.ascx.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About\Contact.ascx.designer.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
     </Compile>
     <Compile Include="Pages\OurRange.aspx.cs">
       <DependentUpon>OurRange.aspx</DependentUpon>
@@ -128,6 +144,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.ascx.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.ascx.designer.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -140,9 +170,7 @@
     </None>
     <Content Include="Web.sitemap" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Themes\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

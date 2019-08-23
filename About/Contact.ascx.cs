@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace KFurniture
+namespace KFurniture.About
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class WebUserControl1 : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -10,5 +10,6 @@
       <siteMapNode url="~/Pages/Bedrooms.aspx" title="Bedrooms" description="Bedrooms" />
       <siteMapNode url="~/Pages/Sofas.aspx" title="Sofas"  description="See our sofa range" />
      </siteMapNode>
+  <siteMapNode url="~/Register.aspx" title="Register" description="Register for this site"/>
    </siteMapNode>
 </siteMap>
