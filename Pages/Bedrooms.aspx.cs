@@ -8,5 +8,10 @@ namespace KFurniture.Pages
         {
 
         }
+
+        protected void DetailsView1_PageIndexChanging(object sender, System.Web.UI.WebControls.DetailsViewPageEventArgs e)
+        {
+
+        }
     }
 }

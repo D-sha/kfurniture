@@ -71,13 +71,13 @@
     <Content Include="About\ContactUs.aspx" />
     <Content Include="About\Contact.ascx" />
     <Content Include="App_Themes\Default\default.css" />
-    <Content Include="Images\Bapartment-2558277_1280.jpg" />
+    <Content Include="Images\DBWarm.jpg" />
     <Content Include="Images\Bbedroom-3185433_1280.jpg" />
     <Content Include="Images\Bcreate-3532937_1280.jpg" />
     <Content Include="Images\SLiving_room_Germany_2006.jpg" />
     <Content Include="Images\Bbedroom-1940169_1920.jpg" />
     <Content Include="Images\logo.png" />
-    <Content Include="Images\Sofa3800ppx.jpg" />
+    <Content Include="Images\largeBNSsofa.jpg" />
     <Content Include="Pages\OurRange.aspx" />
     <Content Include="Pages\Bedrooms.aspx" />
     <Content Include="Pages\Sofas.aspx" />

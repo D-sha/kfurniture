@@ -3,16 +3,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="fullImg">
-        <table>
-            <tr>
-                <td><img src="/Images/Sofa3800ppx.jpg" /></td>
-                <td><img src="/Images/SLiving_room_Germany_2006.jpg" /></td>
-            </tr>
-            <tr>
-                <td>By <a href="https://commons.wikimedia.org/wiki/User:Fastily" title="User:Fastily"><span style="color: #4B0082">FASTILY</span></a> <a href="https://commons.wikimedia.org/wiki/User_talk:Fastily" title="User talk:Fastily">(TALK)</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=9571874">Link</a></td>
-                <td>Reiner Kraft from Gilroy, USA [<a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>],<a href="https://commons.wikimedia.org/wiki/File:Living_room_Germany_2006.jpg">via Wikimedia Commons</a></td>
-            </tr>
-        </table>
-    </div>
+
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="SofaID" DataSourceID="SqlDataSource1" AllowSorting="True" GridLines="None">
+        <Columns>
+            <asp:ImageField DataImageUrlField="Image" DataImageUrlFormatString="~\Images\{0}" ItemStyle-Height="150px" ItemStyle-CssClass="thumbs">
+<ItemStyle CssClass="thumbs" Height="150px"></ItemStyle>
+            </asp:ImageField>
+            <asp:BoundField DataField="SofaName" HeaderText="Name" SortExpression="SofaName"/>
+            <asp:BoundField DataField="SofaColour" HeaderText="Colour"/>
+            <asp:BoundField DataField="SofaHeight" HeaderText="Height"/>
+            <asp:BoundField DataField="SofaDepth" HeaderText="Depth"/>
+            <asp:BoundField DataField="SofaLength" HeaderText="Length"/>
+            <asp:BoundField DataField="SalePrice" HeaderText="Price" SortExpression="SalePrice" DataFormatString="{0:c}" />
+            <asp:BoundField DataField="Image" HeaderText="Image" />
+        </Columns>
+    </asp:GridView>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KFurnitureConnectionString1 %>" SelectCommand="SELECT [SofaID], [SofaName], [SofaColour], [SofaHeight], [SofaDepth], [SofaLength], [SalePrice], [DealerPrice], [Thumbnail], [Image] FROM [sofa]"></asp:SqlDataSource>
 </asp:Content>
