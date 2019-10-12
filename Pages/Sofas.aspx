@@ -6,14 +6,14 @@
 
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="SofaID" DataSourceID="SqlDataSource1" AllowSorting="True" GridLines="None">
         <Columns>
-            <asp:ImageField DataImageUrlField="Image" DataImageUrlFormatString="~\Images\{0}" ItemStyle-Height="150px" ItemStyle-CssClass="thumbs">
+            <asp:ImageField DataImageUrlField="Thumbnail" DataImageUrlFormatString="~\Images\Sofa\{0}" ItemStyle-Height="150px" ItemStyle-CssClass="thumbs">
 <ItemStyle CssClass="thumbs" Height="150px"></ItemStyle>
             </asp:ImageField>
             <asp:BoundField DataField="SofaName" HeaderText="Name" SortExpression="SofaName"/>
             <asp:BoundField DataField="SofaColour" HeaderText="Colour"/>
-            <asp:BoundField DataField="SofaHeight" HeaderText="Height"/>
-            <asp:BoundField DataField="SofaDepth" HeaderText="Depth"/>
-            <asp:BoundField DataField="SofaLength" HeaderText="Length"/>
+            <asp:BoundField DataField="SofaHeight" HeaderText="Height" DataFormatString="{0} cm"/>
+            <asp:BoundField DataField="SofaDepth" HeaderText="Depth" DataFormatString="{0} cm"/>
+            <asp:BoundField DataField="SofaLength" HeaderText="Length" DataFormatString="{0} cm"/>
             <asp:BoundField DataField="SalePrice" HeaderText="Price" SortExpression="SalePrice" DataFormatString="{0:c}" />
             <asp:BoundField DataField="Image" HeaderText="Image" />
         </Columns>
