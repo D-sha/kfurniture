@@ -79,6 +79,8 @@
     <Content Include="About\Contact.ascx" />
     <Content Include="App_Themes\Default\default.css" />
     <Content Include="Global.asax" />
+    <Content Include="Management\ManageBed.aspx" />
+    <Content Include="Management\ManageSofa.aspx" />
     <Content Include="Pages\OurRange.aspx" />
     <Content Include="Pages\Bedrooms.aspx" />
     <Content Include="Pages\Sofas.aspx" />
@@ -116,6 +118,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ManageBed.aspx.cs">
+      <DependentUpon>ManageBed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ManageBed.aspx.designer.cs">
+      <DependentUpon>ManageBed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\ManageSofa.aspx.cs">
+      <DependentUpon>ManageSofa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\ManageSofa.aspx.designer.cs">
+      <DependentUpon>ManageSofa.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\OurRange.aspx.cs">
       <DependentUpon>OurRange.aspx</DependentUpon>
@@ -183,7 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
-    <Folder Include="Management\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

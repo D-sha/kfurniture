@@ -1,15 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="~/" title="Home"  description="Home">
-    <siteMapNode url="~/Default.aspx" title="Home"  description="Go to homepage" > 
+    <siteMapNode url="~/Default.aspx" title="Home"  description="Go to homepage" >
     </siteMapNode>
     <siteMapNode url="~/About/AboutUs.aspx" title="About Us" description="About Us" >
-    <siteMapNode url="~/About/ContactUs.aspx" title="Contact Us" description="Contact Us"  />
-      </siteMapNode>
+      <siteMapNode url="~/About/ContactUs.aspx" title="Contact Us" description="Contact Us"  />
+    </siteMapNode>
     <siteMapNode url="~/Pages/OurRange.aspx" title="Our Range" description="Our Range" >
       <siteMapNode url="~/Pages/Bedrooms.aspx" title="Bedrooms" description="Bedrooms" />
       <siteMapNode url="~/Pages/Sofas.aspx" title="Sofas"  description="See our sofa range" />
-     </siteMapNode>
-  <siteMapNode url="~/Register.aspx" title="Register" description="Register for this site"/>
-   </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Register.aspx" title="Register" description="Register for this site"/>
+
+    <!--<siteMapNode title="Manage">-->
+      <siteMapNode url="~/Management/ManageBed.aspx" title="Manage beds" description="Add remove and delete beds on this site"/>
+    <siteMapNode url="~/Management/ManageSofa.aspx" title="Manage sofas" description="Add remove and delete sofas on this site"/>
+
+    <!--</siteMapNode>-->
+  </siteMapNode>
 </siteMap>
