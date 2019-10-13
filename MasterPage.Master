@@ -18,12 +18,21 @@
             <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" ShowStartingNode="False" />
              <br />
              <div class="breadcrumb">
-             <asp:SiteMapPath ID="SiteMapPath1" runat="server">
-             </asp:SiteMapPath>
-                 </div>
-        </nav>
+                 <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                 </asp:SiteMapPath>  
+             </div>
+
+                </nav>
+        <div class="login">
+            Welcome
+         <asp:LoginName ID="LoginName1" runat="server" />
+        &nbsp;&nbsp;
+            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+        </div>
+
         <div class="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
             </asp:ContentPlaceHolder>
         </div>
     </form>
