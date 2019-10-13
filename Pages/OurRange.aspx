@@ -7,10 +7,10 @@
         <table>
             <tr>
                 <td><a href="/Pages/Sofas.aspx">
-                    <img src="../Images/SLiving_room_Germany_2006.jpg" title="Browse out Sofa Range" /></a><br />
+                    <img src="/Images/Sofa/BNSsofa.jpg" title="Browse out Sofa Range" /></a><br />
                 </td>
                 <td><a href="Bedrooms.aspx">
-                    <img src="../Images/Bbedroom-1940169_1920.jpg" title="Browse out Bedroom range" /></a>
+                    <img src="/Images/Bedroom/DBwarm.jpg" title="Browse out Bedroom range" /></a>
             </tr>
             <tr>
                 <td>Browse out Huge range of quality sofas
